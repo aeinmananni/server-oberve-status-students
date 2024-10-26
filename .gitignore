@@ -1,2 +1,6 @@
 package-lock.json
 node_modules/
+.env
+.env.example
+start/db.ts
+dist/start/db.js
