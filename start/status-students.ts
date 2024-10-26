@@ -4,10 +4,10 @@ import mySqlData from "./db";
 
 router.get("/GET/All" , async(req,res) =>{
 
-    const result = await mySqlData(``);
+    const result = await mySqlData(`EXECUTE [status].GetStudentList`);
 
 
-    res.send(result.recordset[0]);
+    res.send(result.recordset);
 })
 
 

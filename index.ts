@@ -1,7 +1,9 @@
-import express  from "express";
+import express, { Application }  from "express";
 import "dotenv-safe/config";
 const app = express();
-
+import ("./router/router").then((module) =>{
+    (module as any as {default:(app:Application) => void}).default(app);
+})
 
 
 
