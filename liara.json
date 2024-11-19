@@ -7,5 +7,6 @@
     "timeout": 15,
     "retries": 2,
     "startPeriod": 5
-   }
+   },
+   "dist":"dist"
 }
